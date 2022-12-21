@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: ad1254b658713de47b0e65effa0db93d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass LayerExample extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Update() {\r\n        if (UnityEngine_1.Input.GetMouseButtonDown(0))
+    {\r\n            let ray = UnityEngine_1.Camera.main.ScreenPointToRay(UnityEngine_1.Input.mousePosition);\r\n           
+    let ref = $ref();\r\n            let layerMask = 1 << 20;\r\n            if (UnityEngine_1.Physics.Raycast(ray,
+    ref, 100, layerMask)) {\r\n                let hitInfo = $unref(ref);\r\n               
+    console.log(`name : ${hitInfo.collider.gameObject.name}`);\r\n            }\r\n       
+    }\r\n    }\r\n}\r\nexports.default = LayerExample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTGF5ZXJFeGFtcGxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTGF5ZXJFeGFtcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZDQUErRDtBQUUvRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBRTVELE1BQU07UUFDRixJQUFHLG1CQUFLLENBQUMsa0JBQWtCLENBQUMsQ0FBQyxDQUFDLEVBQUM7WUFDM0IsSUFBSSxHQUFHLEdBQUcsb0JBQU0sQ0FBQyxJQUFJLENBQUMsZ0JBQWdCLENBQUMsbUJBQUssQ0FBQyxhQUFhLENBQUMsQ0FBQztZQUM1RCxJQUFJLEdBQUcsR0FBRyxJQUFJLEVBQWMsQ0FBQztZQUU3QixJQUFJLFNBQVMsR0FBRyxDQUFDLElBQUksRUFBRSxDQUFDO1lBRXhCLElBQUkscUJBQU8sQ0FBQyxPQUFPLENBQUMsR0FBRyxFQUFFLEdBQUcsRUFBRSxHQUFHLEVBQUUsU0FBUyxDQUFDLEVBQzdDO2dCQUNJLElBQUksT0FBTyxHQUFHLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFDMUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxVQUFVLE9BQU8sQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7YUFDN0Q7U0FDSjtJQUNMLENBQUM7Q0FDSDtBQWhCRCwrQkFnQkMifQ==","assetPath":"Assets/02.ZEPETSCRIPT/11.Tag
+    & Layer/LayerExample.ts","manifest":{"properties":[],"name":"LayerExample","description":""},"isCompiled":true}'
+  typescriptHash: 9d5eaf9c4c4249f4185b4bdb149902c7
+  onlyWriteTrigger: 0

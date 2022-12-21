@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: 5338f1d1a2de6490cbcaa01333b2f711
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass ZEPETOCharacterController
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        ZEPETO_Character_Controller_1.ZepetoCharacterCreator.CreateByZepetoId(this.zepetoId,
+    new ZEPETO_Character_Controller_1.SpawnInfo(), (character) => {\r\n           
+    this.character = character;\r\n        });\r\n        this.command = 0 /* NONE
+    */;\r\n    }\r\n    Update() {\r\n        this.StartCoroutine(this.ContorlCharacter());\r\n   
+    }\r\n    *ContorlCharacter() {\r\n        console.log(this.command);\r\n       
+    switch (+this.command) {\r\n            case 0 /* NONE */:\r\n               
+    console.log(\"SELECT COMMAND\");\r\n                break;\r\n            case
+    1 /* CREATE */:\r\n                // Create by Zepeto ID\r\n               
+    ZEPETO_Character_Controller_1.ZepetoCharacterCreator.CreateByZepetoId(this.zepetoId,
+    new ZEPETO_Character_Controller_1.SpawnInfo(), (character) => {\r\n                   
+    this.character = character;\r\n                });\r\n                this.command
+    = 0 /* NONE */;\r\n                break;\r\n            case 2 /* MOVE_TO_POSITION
+    */:\r\n                // 1) MoveToPosition - Move until the character reaches
+    the target position\r\n                this.character.MoveToPosition(this.position);\r\n               
+    console.log(`MoveToPosition : `, this.position);\r\n                break;\r\n           
+    case 3 /* MOVE_CONTINOUSLY */:\r\n                // 2) MoveContinuosly - Move
+    in the specified direction (In Update) until told otherwise.\r\n               
+    this.character.MoveContinuously(this.direction);\r\n                // this.character.MoveContinuously(Vector2
+    direction);\r\n                console.log(`MoveContinuosly : `, this.direction);\r\n               
+    break;\r\n            case 4 /* STOP */:\r\n                // 3) StopMoving
+    - Halt a currently active movement.\r\n                this.character.StopMoving();\r\n               
+    break;\r\n            case 5 /* JUMP */:\r\n                // 4) Jump - Jump
+    at the currently set up jump height \r\n                this.character.Jump();\r\n               
+    break;\r\n            case 6 /* TELEPORT */:\r\n                // 5) Teleport
+    - Instantly move to a specified Transform point. \r\n                this.character.Teleport(this.teleportSpot.position,
+    this.teleportSpot.rotation);\r\n                break;\r\n            case 7
+    /* REMOVE */:\r\n                // Remove Character\r\n                ZEPETO_Character_Controller_1.ZepetoCharacterCreator.RemoveCharacter(this.character);\r\n               
+    this.command = 0 /* NONE */;\r\n                break;\r\n            case 8
+    /* SET_GESTURE */:\r\n                // 1) SetGesture - Play a character motion
+    based on the specified AnimationClip on loop until CancelGesture() is called.\r\n               
+    this.character.SetGesture(this.gesture);\r\n                this.command = 0
+    /* NONE */;\r\n                break;\r\n            case 9 /* CANCEL_GESTURE
+    */:\r\n                // 2) Cancel - Stop the current AnimationClip in motion.\r\n               
+    this.character.CancelGesture();\r\n                break;\r\n            case
+    10 /* SET_MOTION_V2 */:\r\n                // Allows adjustment of the MotionController
+    V2 and its related parameter values.\r\n                this.character.MotionV2.useDoubleJump
+    = this.useDoubleJump;\r\n                this.character.MotionV2.doubleJumpPower
+    = this.doubleJumpPower;\r\n                this.character.MotionV2.useLandingRoll
+    = this.useLandingRoll;\r\n                this.character.MotionV2.landingRollSpeed
+    = this.landingRollSpeed;\r\n                this.character.MotionV2.useMoveTurn
+    = this.useMoveTurn;\r\n                this.character.MotionV2.Gravity = this.gravity;\r\n               
+    break;\r\n            case 11 /* CHECK_MOTION_V2 */:\r\n                console.log(`CurrentJumpState
+    : ${this.character.MotionV2.CurrentJumpState}`);\r\n                console.log(`CurrentLandingState
+    : ${this.character.MotionV2.CurrentLandingState}`);\r\n                console.log(`CurrentMoveState
+    : ${this.character.MotionV2.CurrentMoveState}`);\r\n                break;\r\n           
+    case 12 /* SET_STATE_MACHINE */:\r\n                // The animation is no longer
+    automatically played by the character''s StateMachine.\r\n                this.character.StateMachine.constraintStateAnimation
+    = true;\r\n                var stateType = UnityEngine_1.Animator.StringToHash(\"State\");\r\n               
+    this.character.ZepetoAnimator.SetInteger(stateType, 1);\r\n                break;\r\n       
+    }\r\n        yield new UnityEngine_1.WaitForSeconds(5);\r\n    }\r\n}\r\nexports.default
+    = ZEPETOCharacterController;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWkVQRVRPQ2hhcmFjdGVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlpFUEVUT0NoYXJhY3RlckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkVBQTRIO0FBQzVILDZDQUEwSDtBQWtCMUgsTUFBcUIseUJBQTBCLFNBQVEscUNBQXFCO0lBMEJ4RSxLQUFLO1FBQ0Qsb0RBQXNCLENBQUMsZ0JBQWdCLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxJQUFJLHVDQUFTLEVBQUUsRUFBRSxDQUFDLFNBQTBCLEVBQUUsRUFBRTtZQUNuRyxJQUFJLENBQUMsU0FBUyxHQUFHLFNBQVMsQ0FBQztRQUMvQixDQUFDLENBQUMsQ0FBQTtRQUNGLElBQUksQ0FBQyxPQUFPLGVBQW9CLENBQUM7SUFDckMsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxnQkFBZ0IsRUFBRSxDQUFDLENBQUM7SUFDakQsQ0FBQztJQUVPLENBQUMsZ0JBQWdCO1FBQ3JCLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQzFCLFFBQVEsQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFO1lBQ25CO2dCQUNJLE9BQU8sQ0FBQyxHQUFHLENBQUMsZ0JBQWdCLENBQUMsQ0FBQztnQkFDOUIsTUFBTTtZQUVWO2dCQUNJLHNCQUFzQjtnQkFDdEIsb0RBQXNCLENBQUMsZ0JBQWdCLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxJQUFJLHVDQUFTLEVBQUUsRUFBRSxDQUFDLFNBQTBCLEVBQUUsRUFBRTtvQkFDbkcsSUFBSSxDQUFDLFNBQVMsR0FBRyxTQUFTLENBQUM7Z0JBQy9CLENBQUMsQ0FBQyxDQUFBO2dCQUNGLElBQUksQ0FBQyxPQUFPLGVBQW9CLENBQUM7Z0JBQ2pDLE1BQU07WUFFVjtnQkFDSSwyRUFBMkU7Z0JBQzNFLElBQUksQ0FBQyxT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","assetPath":"Assets/03.CREATING
+    A WORLD/01.ZEPETO Character Controller/ZEPETOCharacterController.ts","manifest":{"properties":[{"assembly":"","name":"command","type":"CommandTypes","isArray":false,"initValue":[],"enumKeys":["NONE","CREATE","MOVE_TO_POSITION","MOVE_CONTINOUSLY","STOP","JUMP","TELEPORT","REMOVE","SET_GESTURE","CANCEL_GESTURE","SET_MOTION_V2","CHECK_MOTION_V2","SET_STATE_MACHINE"],"enumValues":["0","1","2","3","4","5","6","7","8","9","10","11","12"],"attributes":[]},{"assembly":"mscorlib","name":"zepetoId","type":"System.String","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"position","type":"UnityEngine.Vector3","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"Header","args":["\"MoveToPosition\""]}]},{"assembly":"UnityEngine.CoreModule","name":"direction","type":"UnityEngine.Vector3","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"Header","args":["\"MoveContinuosly\""]}]},{"assembly":"UnityEngine.CoreModule","name":"teleportSpot","type":"UnityEngine.Transform","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"Header","args":["\"Teleport\""]}]},{"assembly":"UnityEngine.AnimationModule","name":"gesture","type":"UnityEngine.AnimationClip","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"Header","args":["\"Set
+    Gesture\""]}]},{"assembly":"mscorlib","name":"useDoubleJump","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"Header","args":["\"Set
+    MotionV2\""]}]},{"assembly":"mscorlib","name":"doubleJumpPower","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"useLandingRoll","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"landingRollSpeed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"useMoveTurn","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"gravity","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ZEPETOCharacterController","description":""},"isCompiled":true}'
+  typescriptHash: 1f3eb185f8e658c3433087b7c1ac2710
+  onlyWriteTrigger: 0

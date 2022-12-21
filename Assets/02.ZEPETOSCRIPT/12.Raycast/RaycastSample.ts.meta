@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: 4aa9ae97da2660443a2fdf31ee576d9a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass RaycastSample extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n    }\r\n    Update() {\r\n        this.MouseControl();\r\n   
+    }\r\n    MouseControl() {\r\n        if (UnityEngine_1.Input.GetMouseButtonDown(0))
+    {\r\n            let ray = UnityEngine_1.Camera.main.ScreenPointToRay(UnityEngine_1.Input.mousePosition);\r\n           
+    //Please note that In order to retain the RaycastHit information as an output
+    parameter it must be wrapped in a $ref tag. \r\n            //Because we require
+    the out qualifier as a parameter, we create a reference without actually creating
+    an object.          \r\n            let ref = $ref();\r\n            if (UnityEngine_1.Physics.Raycast(ray,
+    ref, 1000)) {\r\n                //To check the returned Raycast hit data, please
+    remember to unwrap the reference by using $unref\r\n                let hitInfo
+    = $unref(ref);\r\n                console.log(`Detect Hit!`);\r\n               
+    console.log(`hitInfo.collider.name : ${hitInfo.collider.name}`);\r\n           
+    }\r\n            else {\r\n                console.log(`Failed to Detect Collision`);\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = RaycastSample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmF5Y2FzdFNhbXBsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJheWNhc3RTYW1wbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQWlFO0FBRWpFLE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFFNUQsS0FBSztJQUVMLENBQUM7SUFFRCxNQUFNO1FBQ04sSUFBSSxDQUFDLFlBQVksRUFBRSxDQUFDO0lBQ3BCLENBQUM7SUFFRCxZQUFZO1FBQ1osSUFBRyxtQkFBSyxDQUFDLGtCQUFrQixDQUFDLENBQUMsQ0FBQyxFQUM5QjtZQUNJLElBQUksR0FBRyxHQUFHLG9CQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDLG1CQUFLLENBQUMsYUFBYSxDQUFDLENBQUM7WUFFNUQsMEhBQTBIO1lBQzFILDJIQUEySDtZQUMzSCxJQUFJLEdBQUcsR0FBRyxJQUFJLEVBQWMsQ0FBQztZQUU3QixJQUFHLHFCQUFPLENBQUMsT0FBTyxDQUFDLEdBQUcsRUFBRSxHQUFHLEVBQUUsSUFBSSxDQUFDLEVBQ2xDO2dCQUNJLGlHQUFpRztnQkFDakcsSUFBSSxPQUFPLEdBQUcsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDO2dCQUUxQixPQUFPLENBQUMsR0FBRyxDQUFDLGFBQWEsQ0FBQyxDQUFDO2dCQUMzQixPQUFPLENBQUMsR0FBRyxDQUFDLDJCQUEyQixPQUFPLENBQUMsUUFBUSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7YUFFbkU7aUJBQU07Z0JBQ0gsT0FBTyxDQUFDLEdBQUcsQ0FBQyw0QkFBNEIsQ0FBQyxDQUFDO2FBQzdDO1NBQ0o7SUFDRCxDQUFDO0NBRUo7QUFqQ0QsZ0NBaUNDIn0=","assetPath":"Assets/02.ZEPETSCRIPT/12.Raycast/RaycastSample.ts","manifest":{"properties":[],"name":"RaycastSample","description":""},"isCompiled":true}'
+  typescriptHash: 364ba6a2e1a06e393b6b249faaabe22f
+  onlyWriteTrigger: 0
