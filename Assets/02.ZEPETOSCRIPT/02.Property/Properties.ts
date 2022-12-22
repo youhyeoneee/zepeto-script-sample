@@ -1,20 +1,14 @@
-import { ZepetoScriptBehaviour } from "ZEPETO.Script";
-import { Vector3, GameObject, Transform } from "UnityEngine";
+import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { Vector3, GameObject, Transform } from 'UnityEngine'
 
 export default class Properties extends ZepetoScriptBehaviour {
-    
+
     public floatValue: float;
-    public floatValues: float[];
-    
-    @NonSerialized()
-    public strValue:string;
-    
-    @HideInInspector()
-    public strValue2:string;
-    
-    public gameOject:GameObject;
-    public transformValue:Transform;
-    
+    public strValue: string;
+
+    public gameOject: GameObject;
+    public transformValue: Transform;    
+
     @SerializeField()
     private vectorValue: Vector3;
     
@@ -27,13 +21,15 @@ export default class Properties extends ZepetoScriptBehaviour {
         console.log(`${this.floatValues.length}`)
     }
 
-    Update() 
-    {
-        // rotate cube a
+    Update() {
+        console.log(`floatValue : ${this.floatValue}`);
+        console.log(`strValue : ${this.strValue}`);
+    
+        // Rotate Cube_A
         var transform = this.gameOject.GetComponent<Transform>();
         transform.Rotate(this.vectorValue);
-
-        // rotate cube b
+    
+        // Rotate Cube_B
         this.transformValue.Rotate(this.vectorValue);
     }
 }

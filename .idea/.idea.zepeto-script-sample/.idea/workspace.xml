@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a511c078-b253-4014-9587-0e416299b865" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Multiplay_Script.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Multiplay_Script.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Script.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Script.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/Create a ZEPETO Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/Create a ZEPETO Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zepeto-sandbox.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zepeto-sandbox.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/zsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/zepeto-script-compiler/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/zepeto-script-compiler/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JGSe51kyV5PHv4Sif31WsGu9ei" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\qqff0\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Node.js/Chrome.Zepeto Multiplay Script" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a511c078-b253-4014-9587-0e416299b865" name="Changes" comment="" />
+      <created>1671703020504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671703020504</updated>
+      <workItem from="1671703022780" duration="2397000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

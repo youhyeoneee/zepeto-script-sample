@@ -23,7 +23,7 @@ ScriptedImporter:
     HelloWorld extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
     console.log(`log : Hello World`);\r\n        console.warn(`warn : Hello World`);\r\n       
     console.error(`error : Hello World`);\r\n    }\r\n}\r\nexports.default = HelloWorld;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGVsbG9Xb3JsZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkhlbGxvV29ybGQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBb0Q7QUFFcEQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtJQUV6RCxLQUFLO1FBRUQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxtQkFBbUIsQ0FBQyxDQUFDO1FBQ2pDLE9BQU8sQ0FBQyxJQUFJLENBQUMsb0JBQW9CLENBQUMsQ0FBQztRQUNuQyxPQUFPLENBQUMsS0FBSyxDQUFDLHFCQUFxQixDQUFDLENBQUM7SUFDekMsQ0FBQztDQUNKO0FBUkQsNkJBUUMifQ==","assetPath":"Assets/02.Hello
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGVsbG9Xb3JsZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkhlbGxvV29ybGQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtJQUV6RCxLQUFLO1FBQ0QsT0FBTyxDQUFDLEdBQUcsQ0FBQyxtQkFBbUIsQ0FBQyxDQUFDO1FBQ2pDLE9BQU8sQ0FBQyxJQUFJLENBQUMsb0JBQW9CLENBQUMsQ0FBQztRQUNuQyxPQUFPLENBQUMsS0FBSyxDQUFDLHFCQUFxQixDQUFDLENBQUM7SUFDekMsQ0FBQztDQUVKO0FBUkQsNkJBUUMifQ==","assetPath":"Assets/02.ZEPETOSCRIPT/01.Hello
     ZEPETOScript/HelloWorld.ts","manifest":{"properties":[],"name":"HelloWorld","description":""},"isCompiled":true}'
-  typescriptHash: 7d87816d33fc90b39f0d33cf79df91a0
+  typescriptHash: 77905a566db166d289e3fd76c1a740d2
   onlyWriteTrigger: 0
