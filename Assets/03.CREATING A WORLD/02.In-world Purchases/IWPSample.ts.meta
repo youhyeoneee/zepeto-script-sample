@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 9536afe368b9a4076a1587bb6c422399
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    IWPSample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnPurchaseComplete(item)
+    {\r\n        console.log(\"OnPurchaseComplete\");\r\n        console.log(`item.itemId
+    : ${item.itemId}, item.name : ${item.name}, item.description : ${item.description},
+    item.price : ${item.price}`);\r\n    }\r\n    OnPurchaseFailed(error) {\r\n       
+    console.log(`OnPurchaseFailed : ${error.message}`);\r\n    }\r\n}\r\nexports.default
+    = IWPSample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSVdQU2FtcGxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSVdQU2FtcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXNEO0FBRXRELE1BQXFCLFNBQVUsU0FBUSxxQ0FBcUI7SUFFeEQsa0JBQWtCLENBQUMsSUFBSTtRQUNuQixPQUFPLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLENBQUM7UUFDbEMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxpQkFBaUIsSUFBSSxDQUFDLE1BQU0saUJBQWlCLElBQUksQ0FBQyxJQUFJLHdCQUF3QixJQUFJLENBQUMsV0FBVyxrQkFBa0IsSUFBSSxDQUFDLEtBQUssRUFBRSxDQUFDLENBQUM7SUFDOUksQ0FBQztJQUVELGdCQUFnQixDQUFDLEtBQUs7UUFDbEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxzQkFBc0IsS0FBSyxDQUFDLE9BQU8sRUFBRSxDQUFDLENBQUM7SUFDdkQsQ0FBQztDQUNKO0FBVkQsNEJBVUMifQ==","assetPath":"Assets/03.CREATING
+    A WORLD/02.In-world Purchases/IWPSample.ts","manifest":{"properties":[],"name":"IWPSample","description":""},"isCompiled":true}'
+  typescriptHash: 489b5ce7bbf572982c0e22ff1550f7d8
+  onlyWriteTrigger: 0

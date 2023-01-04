@@ -134,7 +134,7 @@ export default class ZEPETOCharacterController extends ZepetoScriptBehaviour {
             case CommandTypes.SET_STATE_MACHINE:
                 // The animation is no longer automatically played by the character's StateMachine.
                 this.character.StateMachine.constraintStateAnimation = true;
-                var stateType = Animator.StringToHash( "State" );
+                const stateType = Animator.StringToHash( "State" );
                 this.character.ZepetoAnimator.SetInteger(stateType, 1);
                 break;
         }

@@ -21,7 +21,7 @@ ScriptedImporter:
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     NewTypescript extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
-    {\r\n    }\r\n}\r\nexports.default = NewTypescript;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmV3IFR5cGVzY3JpcHQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOZXcgVHlwZXNjcmlwdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBRTVELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFORCxnQ0FNQyJ9","assetPath":"Assets/02.ZEPETOSCRIPT/01.Hello
+    {\r\n    }\r\n}\r\nexports.default = NewTypescript;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmV3IFR5cGVzY3JpcHQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOZXcgVHlwZXNjcmlwdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUV0RCxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBRTVELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFORCxnQ0FNQyJ9","assetPath":"Assets/02.ZEPETOSCRIPT/01.Hello
     ZEPETOScript/New Typescript.ts","manifest":{"properties":[],"name":"NewTypescript","description":""},"isCompiled":true}'
-  typescriptHash: 0673a106377db95c0988617442310952
+  typescriptHash: 9462181d1801b436b47c48b12f1a456e
   onlyWriteTrigger: 0

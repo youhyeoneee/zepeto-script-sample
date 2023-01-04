@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 99398e6029d544e12ad0b053ea0c4c0f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass QuickChattingTest extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        ZEPETO_World_1.ZepetoWorldContent.GetQuickMessageList(quickMessageList
+    => {\r\n            quickMessageList.forEach((quickMessage, index, array) =>
+    {\r\n                console.log(`id = ${quickMessage.id}, message = ${quickMessage.message}`);\r\n           
+    });\r\n        }, err => {\r\n            console.log(`QuickMessage Error: ${err}`);\r\n       
+    });\r\n    }\r\n    OnClickQuickMessageButton(quickId) {\r\n        ZEPETO_World_1.WorldMultiplayChatContent.instance.SendQuickMessage(quickId);\r\n   
+    }\r\n}\r\nexports.default = QuickChattingTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUXVpY2tDaGF0dGluZ1Rlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJRdWlja0NoYXR0aW5nVGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCwrQ0FBMkY7QUFFM0YsTUFBcUIsaUJBQWtCLFNBQVEscUNBQXFCO0lBRWhFLEtBQUs7UUFDRCxpQ0FBa0IsQ0FBQyxtQkFBbUIsQ0FBQyxnQkFBZ0IsQ0FBQyxFQUFFO1lBQ3RELGdCQUFnQixDQUFDLE9BQU8sQ0FBQyxDQUFDLFlBQTBCLEVBQUUsS0FBYSxFQUFFLEtBQXFCLEVBQUUsRUFBRTtnQkFDMUYsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLFlBQVksQ0FBQyxFQUFFLGVBQWUsWUFBWSxDQUFDLE9BQU8sRUFBRSxDQUFDLENBQUM7WUFDOUUsQ0FBQyxDQUFDLENBQUM7UUFDUCxDQUFDLEVBQUUsR0FBRyxDQUFDLEVBQUU7WUFDTCxPQUFPLENBQUMsR0FBRyxDQUFDLHVCQUF1QixHQUFHLEVBQUUsQ0FBQyxDQUFDO1FBQzlDLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztJQUVPLHlCQUF5QixDQUFDLE9BQWU7UUFDN0Msd0NBQXlCLENBQUMsUUFBUSxDQUFDLGdCQUFnQixDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ2pFLENBQUM7Q0FDSjtBQWZELG9DQWVDIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/08.CommunicationTool/QuickChat/QuickChattingTest.ts","manifest":{"properties":[],"name":"QuickChattingTest","description":""},"isCompiled":true}'
+  typescriptHash: 7dedf8a1fa075f024695779c6731b1d2
+  onlyWriteTrigger: 0

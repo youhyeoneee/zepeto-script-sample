@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: efdb360b8d3b74da0a4ba942ae5d9f6b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    IWPTest extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.zepetoIWPButton.SetItemId(\"item_01\");\r\n    }\r\n}\r\nexports.default
+    = IWPTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSVdQVGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIklXUFRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFHdEQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUl0RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLGVBQWUsQ0FBQyxTQUFTLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDOUMsQ0FBQztDQUNKO0FBUEQsMEJBT0MifQ==","assetPath":"Assets/03.CREATING
+    A WORLD/02.In-world Purchases/IWPTest.ts","manifest":{"properties":[{"assembly":"ZEPETO.IWP","name":"zepetoIWPButton","type":"ZEPETO.IWP.ZepetoIWPButton","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"IWPTest","description":""},"isCompiled":true}'
+  typescriptHash: ac5771f068994efcd909b691c710e562
+  onlyWriteTrigger: 0

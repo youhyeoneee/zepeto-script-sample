@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 8162843a58a634d2a9ddbaef576cbbe7
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass URLScheme extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        let customValue = ZEPETO_World_1.WorldService.GetCustomParamValue(\"key_1\");\r\n       
+    console.log(customValue);\r\n    }\r\n}\r\nexports.default = URLScheme;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVVJMU2NoZW1lLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVVJMU2NoZW1lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXNEO0FBQ3RELCtDQUE0QztBQUU1QyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBRXhELEtBQUs7UUFDRCxJQUFJLFdBQVcsR0FBRywyQkFBWSxDQUFDLG1CQUFtQixDQUFDLE9BQU8sQ0FBVyxDQUFDO1FBQ3RFLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDN0IsQ0FBQztDQUVKO0FBUEQsNEJBT0MifQ==","assetPath":"Assets/03.CREATING
+    A WORLD/09.Using ZEPETO App URL Scheme/URLScheme.ts","manifest":{"properties":[],"name":"URLScheme","description":""},"isCompiled":true}'
+  typescriptHash: 5730c223178a04968de30f8932a4e861
+  onlyWriteTrigger: 0

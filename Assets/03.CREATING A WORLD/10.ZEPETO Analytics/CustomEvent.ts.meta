@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 4f4b3fc87003848e6a8ff42a1998db34
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Analytics_1 = require(\"ZEPETO.Analytics\");\r\nclass CustomEvent extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.myButton.onClick.AddListener(()
+    => {\r\n            // When the button is clicked, a random event is fired to
+    Google Analytics\r\n            const ga = this.zepetoAnalytics.Analytics(ZEPETO_Analytics_1.AnalyticsType.GoogleAnalytics);\r\n           
+    const _event = {\r\n                param_01: \"param_string_val_01\",\r\n               
+    param_02: 3,\r\n            };\r\n            ga.LogEvent(\"custom_sub_param\",
+    _event);\r\n        });\r\n    }\r\n}\r\nexports.default = CustomEvent;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDdXN0b21FdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCx1REFBMkU7QUFHM0UsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUsxRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRTtZQUVuQywwRUFBMEU7WUFDMUUsTUFBTSxFQUFFLEdBQUcsSUFBSSxDQUFDLGVBQWUsQ0FBQyxTQUFTLENBQUMsZ0NBQWEsQ0FBQyxlQUFlLENBQUMsQ0FBQztZQU96RSxNQUFNLE1BQU0sR0FBaUI7Z0JBQ3pCLFFBQVEsRUFBRyxxQkFBcUI7Z0JBQ2hDLFFBQVEsRUFBRyxDQUFDO2FBQ2YsQ0FBQTtZQUNELEVBQUUsQ0FBQyxRQUFRLENBQWMsa0JBQWtCLEVBQUUsTUFBTSxDQUFDLENBQUM7UUFDekQsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBQ0o7QUF2QkQsOEJBdUJDIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/10.ZEPETO Analytics/CustomEvent.ts","manifest":{"properties":[{"assembly":"ZEPETO.Analytics","name":"zepetoAnalytics","type":"ZEPETO.Analytics.ZepetoAnalyticsComponent","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"myButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CustomEvent","description":""},"isCompiled":true}'
+  typescriptHash: d99eca2b351b0cfec46f0cb0c1b57a29
+  onlyWriteTrigger: 0

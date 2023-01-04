@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: 045b46aae65ec4ecea5003c6a2dfc510
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Multiplay_1 = require(\"ZEPETO.Multiplay\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass
+    ClientLogic extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.multiplay = this.gameObject.GetComponent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay));\r\n       
+    this.multiplay.add_RoomJoined((room) => {\r\n            // [room.Send] \r\n           
+    // Send \"action\" message to server\r\n            room.Send(\"action\", \"action
+    message\");\r\n            // Send \"message\" message to server\r\n           
+    room.Send(\"message\", \"hello\");\r\n            // Send \"echo\" message to
+    server\r\n            room.Send(\"echo\", 1234);\r\n            // Send RoomData
+    \"posData\" message to server\r\n            const posData = new ZEPETO_Multiplay_1.RoomData();\r\n           
+    posData.Add(\"x\", this.transform.position.x);\r\n            posData.Add(\"y\",
+    this.transform.position.y);\r\n            posData.Add(\"z\", this.transform.position.z);\r\n           
+    room.Send(\"position\", posData.GetObject());\r\n            // Send Custom object
+    \"MessageModel\" to server\r\n            let message = { str: ''test'', isTest:
+    true };\r\n            room.Send(\"channel_object\", message);\r\n           
+    // [room.AddMessageHandler]\r\n            // Add server message listener type
+    by \"echo\"\r\n            room.AddMessageHandler(\"echo\", (message) => {\r\n               
+    // Print server message\r\n                console.log(message);\r\n           
+    });\r\n            // Add server message listener type by \"action-taken\"\r\n           
+    room.AddMessageHandler(\"action-taken\", (message) => {\r\n                //
+    print server message\r\n                console.log(message);\r\n           
+    });\r\n            // Add server message listener type by \"fire\"\r\n           
+    room.AddMessageHandler(\"fire\", (message) => {\r\n                // Print server
+    message\r\n                console.log(message);\r\n            });\r\n       
+    });\r\n    }\r\n}\r\nexports.default = ClientLogic;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2xpZW50TG9naWMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDbGllbnRMb2dpYy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLHVEQUFrRDtBQUNsRCxpREFBc0Q7QUFDdEQsK0NBQW9EO0FBT3BELE1BQXFCLFdBQVksU0FBUSxxQ0FBcUI7SUFJMUQsS0FBSztRQUVELElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxZQUFZLFNBQUMsbUNBQW9CLEVBQUcsQ0FBQztRQUN0RSxJQUFJLENBQUMsU0FBUyxnQkFBZSxDQUFDLElBQVUsRUFBRSxFQUFFO1lBRXhDLGVBQWU7WUFDZixrQ0FBa0M7WUFDbEMsSUFBSSxDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztZQUV0QyxtQ0FBbUM7WUFDbkMsSUFBSSxDQUFDLElBQUksQ0FBQyxTQUFTLEVBQUUsT0FBTyxDQUFDLENBQUM7WUFFOUIsZ0NBQWdDO1lBQ2hDLElBQUksQ0FBQyxJQUFJLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxDQUFDO1lBRXhCLDRDQUE0QztZQUM1QyxNQUFNLE9BQU8sR0FBRyxJQUFJLDJCQUFRLEVBQUUsQ0FBQztZQUMvQixPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUM1QyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUM1QyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUM1QyxJQUFJLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBRSxPQUFPLENBQUMsU0FBUyxFQUFFLENBQUMsQ0FBQztZQUUzQyw4Q0FBOEM7WUFDOUMsSUFBSSxPQUFPLEdBQUcsRUFBQyxHQUFHLEVBQUMsTUFBTSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQWlCLENBQUM7WUFDekQsSUFBSSxDQUFDLElBQUksQ0FBQyxnQkFBZ0IsRUFBRSxPQUFPLENBQUMsQ0FBQztZQUdyQywyQkFBMkI7WUFDM0IsNkNBQTZDO1lBQzdDLElBQUksQ0FBQyxpQkFBaUIsQ0FBQyxNQUFNLEVBQUUsQ0FBQyxPQUFlLEVBQUUsRUFBRTtnQkFDL0MsdUJBQXVCO2dCQUN2QixPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBQ3pCLENBQUMsQ0FBQyxDQUFDO1lBRUgscURBQXFEO1lBQ3JELElBQUksQ0FBQyxpQkFBaUIsQ0FBQyxjQUFjLEVBQUUsQ0FBQyxPQUFlLEVBQUUsRUFBRTtnQkFDdkQsdUJBQXVCO2dCQUN2QixPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBQ3pCLENBQUMsQ0FBQyxDQUFDO1lBRUgsNkNBQTZDO1lBQzdDLElBQUksQ0FBQyxpQkFBaUIsQ0FBQyxNQUFNLEVBQUUsQ0FBQyxPQUFlLEVBQUUsRUFBRTtnQkFDL0MsdUJBQXVCO2dCQUN2QixPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBQ3pCLENBQUMsQ0FBQyxDQUFDO1FBQ1AsQ0FBQyxFQUFDO0lBQ04sQ0FBQztDQUNKO0FBbkRELDhCQW1EQyJ9","assetPath":"Assets/03.CREATING
+    A WORLD/03.Multiplay/ClientLogic.ts","manifest":{"properties":[],"name":"ClientLogic","description":""},"isCompiled":true}'
+  typescriptHash: 1ada2b612c66ab178afbd0f45f26481c
+  onlyWriteTrigger: 0

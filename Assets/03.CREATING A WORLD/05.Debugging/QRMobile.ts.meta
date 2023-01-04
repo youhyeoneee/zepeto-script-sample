@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: e1dab5381097b490b866f075bdb1df5f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    QRMobile extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    console.log(\"QR Mobile console log\");\r\n        console.warn(\"QR Mobile console
+    warning\");\r\n        console.error(\"QR Mobile console error\");\r\n    }\r\n}\r\nexports.default
+    = QRMobile;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUVJNb2JpbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJRUk1vYmlsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUV0RCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBRXZELEtBQUs7UUFDRCxPQUFPLENBQUMsR0FBRyxDQUFDLHVCQUF1QixDQUFDLENBQUM7UUFDckMsT0FBTyxDQUFDLElBQUksQ0FBQywyQkFBMkIsQ0FBQyxDQUFDO1FBQzFDLE9BQU8sQ0FBQyxLQUFLLENBQUMseUJBQXlCLENBQUMsQ0FBQztJQUM3QyxDQUFDO0NBRUo7QUFSRCwyQkFRQyJ9","assetPath":"Assets/03.CREATING
+    A WORLD/05.Debugging/QRMobile.ts","manifest":{"properties":[],"name":"QRMobile","description":""},"isCompiled":true}'
+  typescriptHash: 67ab6f7f20c12c459a1a7effed70bac7
+  onlyWriteTrigger: 0

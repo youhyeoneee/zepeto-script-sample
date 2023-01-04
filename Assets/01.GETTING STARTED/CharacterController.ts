@@ -1,6 +1,6 @@
-import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import { SpawnInfo, ZepetoPlayers, LocalPlayer } from 'ZEPETO.Character.Controller'
- 
+import { ZepetoScriptBehaviour } from 'ZEPETO.Script';
+import { SpawnInfo, ZepetoPlayers, LocalPlayer } from 'ZEPETO.Character.Controller';
+
 export default class CharacterController extends ZepetoScriptBehaviour {
 
     Start() {

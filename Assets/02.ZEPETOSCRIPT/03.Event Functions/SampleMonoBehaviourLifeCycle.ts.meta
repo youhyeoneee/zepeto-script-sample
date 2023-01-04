@@ -1,0 +1,57 @@
+fileFormatVersion: 2
+guid: de6c16d15f7a04c8aa4f4ee5c8f8f312
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    SampleMonoBehaviourLifeCycle extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Awake() {\r\n        console.log(''Awake.'');\r\n    }\r\n    OnEnable() {\r\n       
+    console.log(''OnEnable.'');\r\n    }\r\n    Start() {\r\n        console.log(''Start.'');\r\n   
+    }\r\n    Update() {\r\n        console.log(''OnUpdate.'');\r\n    }\r\n    FixedUpdate()
+    {\r\n        console.log(''FixedUpdate.'');\r\n    }\r\n    LateUpdate() {\r\n       
+    console.log(''LateUpdate.'');\r\n    }\r\n    OnDisable() {\r\n        console.log(''OnDisable.'');\r\n   
+    }\r\n    OnDestroy() {\r\n        console.log(''OnDestroy.'');\r\n    }\r\n   
+    OnTriggerEnter(coll) {\r\n        console.log(`OnTriggerEnter ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnTriggerExit(coll) {\r\n        console.log(`OnTriggerExit ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnTriggerStay(coll) {\r\n        console.log(`OnTriggerStay ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnTriggerEnter2D(coll) {\r\n        console.log(`OnTriggerEnter2D ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnTriggerExit2D(coll) {\r\n        console.log(`OnTriggerExit2D ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnTriggerStay2D(coll) {\r\n        console.log(`OnTriggerStay2D ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnCollisionEnter(coll) {\r\n        console.log(`OnCollisionEnter ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnCollisionExit(coll) {\r\n        console.log(`OnCollisionExit ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnCollisionStay(coll) {\r\n        console.log(`OnCollisionStay ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnCollisionEnter2D(coll) {\r\n        console.log(`OnCollisionEnter2D
+    ${coll.gameObject.name}.`);\r\n    }\r\n    OnCollisionExit2D(coll) {\r\n       
+    console.log(`OnCollisionExit2D ${coll.gameObject.name}.`);\r\n    }\r\n    OnCollisionStay2D(coll)
+    {\r\n        console.log(`OnCollisionStay2D ${coll.gameObject.name}.`);\r\n   
+    }\r\n    OnGUI() {\r\n        console.log(''OnGUI.'');\r\n    }\r\n    OnMouseDown()
+    {\r\n        console.log(''OnMouseDown.'');\r\n    }\r\n    OnMouseDrag() {\r\n       
+    console.log(''OnMouseDrag.'');\r\n    }\r\n    OnMouseUp() {\r\n        console.log(''OnMouseUp.'');\r\n   
+    }\r\n    OnMouseEnter() {\r\n        console.log(''OnMouseEnter.'');\r\n    }\r\n   
+    OnMouseExit() {\r\n        console.log(''OnMouseExit.'');\r\n    }\r\n    OnMouseOver()
+    {\r\n        console.log(''OnMouseOver.'');\r\n    }\r\n    OnMouseUpAsButton()
+    {\r\n        console.log(''OnMouseUpAsButton.'');\r\n    }\r\n    OnAnimatorIK(layerIndex)
+    {\r\n        console.log(`OnAnimatorIK ${layerIndex}.`);\r\n    }\r\n    OnApplicationFocus()
+    {\r\n        console.log(''OnApplicationFocus.'');\r\n    }\r\n    OnApplicationPause()
+    {\r\n        console.log(''OnApplicationPause.'');\r\n    }\r\n    OnApplicationQuit()
+    {\r\n        console.log(''OnApplicationQuit.'');\r\n    }\r\n}\r\nexports.default
+    = SampleMonoBehaviourLifeCycle;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2FtcGxlTW9ub0JlaGF2aW91ckxpZmVDeWNsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNhbXBsZU1vbm9CZWhhdmlvdXJMaWZlQ3ljbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFHdEQsTUFBcUIsNEJBQTZCLFNBQVEscUNBQXFCO0lBRTNFLEtBQUs7UUFDRCxPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBQzFCLENBQUM7SUFDRCxRQUFRO1FBQ0osT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLENBQUMsQ0FBQztJQUM3QixDQUFDO0lBQ0QsS0FBSztRQUNELE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLENBQUM7SUFDMUIsQ0FBQztJQUVELE1BQU07UUFDRixPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzdCLENBQUM7SUFDRCxXQUFXO1FBQ1AsT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUNoQyxDQUFDO0lBQ0QsVUFBVTtRQUNOLE9BQU8sQ0FBQyxHQUFHLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDL0IsQ0FBQztJQUVELFNBQVM7UUFDTCxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDO0lBQzlCLENBQUM7SUFDRCxTQUFTO1FBQ0wsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsQ0FBQztJQUM5QixDQUFDO0lBRUQsY0FBYyxDQUFDLElBQWM7UUFDekIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxrQkFBa0IsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDO0lBQzNELENBQUM7SUFDRCxhQUFhLENBQUMsSUFBYztRQUN4QixPQUFPLENBQUMsR0FBRyxDQUFDLGlCQUFpQixJQUFJLENBQUMsVUFBVSxDQUFDLElBQUksR0FBRyxDQUFDLENBQUM7SUFDMUQsQ0FBQztJQUNELGFBQWEsQ0FBQyxJQUFj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","assetPath":"Assets/02.ZEPETOSCRIPT/03.Event
+    Functions/SampleMonoBehaviourLifeCycle.ts","manifest":{"properties":[],"name":"SampleMonoBehaviourLifeCycle","description":""},"isCompiled":true}'
+  typescriptHash: 1ca47e2be76432171a1f0a50e4ab0cb2
+  onlyWriteTrigger: 0

@@ -516,9 +516,9 @@ MonoBehaviour:
     - {fileID: 0}
     values:
     - '{"type":"System.String, mscorlib","value":"1"}'
-    - '{"type":"System.String, mscorlib","value":"youhyeoneee"}'
-    - '{"type":"UnityEngine.Vector3, UnityEngine.CoreModule","value":"{\"x\":0.0,\"y\":0.0,\"z\":0.0}"}'
-    - '{"type":"UnityEngine.Vector3, UnityEngine.CoreModule","value":"{\"x\":0.0,\"y\":0.0,\"z\":0.0}"}'
+    - '{"type":"System.String, mscorlib","value":"gamedev1"}'
+    - '{"type":"UnityEngine.Vector3, UnityEngine.CoreModule","value":"{\"x\":0.0,\"y\":1.0,\"z\":0.0}"}'
+    - '{"type":"UnityEngine.Vector3, UnityEngine.CoreModule","value":"{\"x\":1.0,\"y\":0.0,\"z\":0.0}"}'
     - 
     - 
     - '{"type":"System.Boolean, mscorlib","value":"False"}'
@@ -569,7 +569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757980224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -605,15 +605,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script:
-    keys:
-    - zepetoId
-    unityValues:
-    - {fileID: 0}
-    values:
-    - '{"type":"System.String, mscorlib","value":"qqff0311"}'
+    keys: []
+    unityValues: []
+    values: []
     unityArrayValues: []
     arrayValues: []
-    script: {fileID: 4458252877524076426, guid: 6baf6cb790615d14eb46e9a6369e161e, type: 3}
+    script: {fileID: 4458252877524076426, guid: 5796b3393c6e1402e8a821028f9d46dd, type: 3}
     isExpaned: 0
 --- !u!4 &1767429862
 Transform:

@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 6c2ba578583134364bd6003895f916cd
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"// import { Sandbox, SandboxOptions, SandboxPlayer
+    } from ''ZEPETO.Multiplay'';\r\n//\r\n// export default class extends Sandbox
+    {\r\n//\r\n//     onCreate(options: SandboxOptions) {\r\n//         this.onMessage(\"SetPrivate\",
+    (client: SandboxPlayer, value: boolean) => {\r\n//             console.log(`Try
+    Set Private : ${value}`);\r\n//             this.setPrivateRoom(client, value);\r\n//        
+    });\r\n//     }\r\n//\r\n//     async setPrivateRoom(client: SandboxPlayer, value:
+    boolean) {\r\n//         await this.setPrivate(value);\r\n//         client.send(\"Log\",
+    `Room Set Private : ${this.private}`);\r\n//     }\r\n// }\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2RUFBNkU7QUFDN0UsRUFBRTtBQUNGLHlDQUF5QztBQUN6QyxFQUFFO0FBQ0YsMENBQTBDO0FBQzFDLG9GQUFvRjtBQUNwRix5REFBeUQ7QUFDekQsa0RBQWtEO0FBQ2xELGNBQWM7QUFDZCxRQUFRO0FBQ1IsRUFBRTtBQUNGLG9FQUFvRTtBQUNwRSx3Q0FBd0M7QUFDeEMsb0VBQW9FO0FBQ3BFLFFBQVE7QUFDUixJQUFJIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/13.Set up in Private Room Runtime/index.ts","manifest":{"properties":[],"name":"index","description":""},"isCompiled":true}'
+  typescriptHash: 558a70d43d49079e3bc7f67f73073e01
+  onlyWriteTrigger: 0

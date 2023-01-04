@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: c9ccda03c00e1489798730648a8001da
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Script_Leaderboard_1 = require(\"ZEPETO.Script.Leaderboard\");\r\nclass
+    GetLeaderboardExample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ZEPETO_Script_Leaderboard_1.LeaderboardAPI.GetLeaderboard(this.leaderboardId,
+    this.OnResult, this.OnError);\r\n    }\r\n    OnResult(result) {\r\n        console.log(`result.isSuccess:
+    ${result.isSuccess}`);\r\n        if (result.leaderboard) {\r\n            console.log(`id:
+    ${result.leaderboard.id}, name: ${result.leaderboard.name}`);\r\n        }\r\n   
+    }\r\n    OnError(error) {\r\n        console.error(error);\r\n    }\r\n}\r\nexports.default
+    = GetLeaderboardExample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0TGVhZGVyYm9hcmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHZXRMZWFkZXJib2FyZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCx5RUFBbUY7QUFFbkYsTUFBcUIscUJBQXNCLFNBQVEscUNBQXFCO0lBSXBFLEtBQUs7UUFDRCwwQ0FBYyxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsYUFBYSxFQUFFLElBQUksQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ25GLENBQUM7SUFFRCxRQUFRLENBQUMsTUFBOEI7UUFDbkMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsTUFBTSxDQUFDLFNBQVMsRUFBRSxDQUFDLENBQUM7UUFFckQsSUFBSSxNQUFNLENBQUMsV0FBVyxFQUFFO1lBQ3BCLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxNQUFNLENBQUMsV0FBVyxDQUFDLEVBQUUsV0FBVyxNQUFNLENBQUMsV0FBVyxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7U0FDakY7SUFDTCxDQUFDO0lBRUQsT0FBTyxDQUFDLEtBQWE7UUFDakIsT0FBTyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUN6QixDQUFDO0NBQ0o7QUFuQkQsd0NBbUJDIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/04.Leaderboard/GetLeaderboard.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"leaderboardId","type":"System.String","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"GetLeaderboardExample","description":""},"isCompiled":true}'
+  typescriptHash: 8e04c26c38679a2f2b0bdeb93dfebdbe
+  onlyWriteTrigger: 0

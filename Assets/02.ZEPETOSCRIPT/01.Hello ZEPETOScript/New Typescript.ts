@@ -1,4 +1,4 @@
-import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { ZepetoScriptBehaviour } from 'ZEPETO.Script';
 
 export default class NewTypescript extends ZepetoScriptBehaviour {
 

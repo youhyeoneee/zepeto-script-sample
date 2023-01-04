@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: dcea491246dfc483cab22267d52b4b3a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Chat_1 = require(\"ZEPETO.Chat\");\r\nclass CustomizeChat extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        // Send message\r\n        ZEPETO_Chat_1.ZepetoChat.Send(\"Hello
+    World\");\r\n        // Receive message\r\n        ZEPETO_Chat_1.ZepetoChat.OnReceivedMessage.AddListener(msg
+    => {\r\n            const userMsg = msg;\r\n            this.msgText.text = `[USER
+    - ${userMsg.userName}] - ${userMsg.message}`;\r\n        });\r\n    }\r\n}\r\nexports.default
+    = CustomizeChat;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9taXplQ2hhdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkN1c3RvbWl6ZUNoYXQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFDdEQsNkNBQW1FO0FBR25FLE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFJNUQsS0FBSztRQUNELGVBQWU7UUFDZix3QkFBVSxDQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQztRQUUvQixrQkFBa0I7UUFDbEIsd0JBQVUsQ0FBQyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEVBQUU7WUFDM0MsTUFBTSxPQUFPLEdBQUcsR0FBa0IsQ0FBQztZQUNuQyxJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksR0FBRyxXQUFXLE9BQU8sQ0FBQyxRQUFRLE9BQU8sT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQzVFLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUVKO0FBZkQsZ0NBZUMifQ==","assetPath":"Assets/03.CREATING
+    A WORLD/16.Customize sending and receiving chat messages/CustomizeChat.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"msgText","type":"UnityEngine.UI.Text","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CustomizeChat","description":""},"isCompiled":true}'
+  typescriptHash: 0e83a34bc7b887f71830d910afae2a70
+  onlyWriteTrigger: 0

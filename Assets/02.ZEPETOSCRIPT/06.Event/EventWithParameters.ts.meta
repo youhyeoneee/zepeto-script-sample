@@ -23,11 +23,12 @@ ScriptedImporter:
     UnityEngine_Events_1 = require(\"UnityEngine.Events\");\r\nconst UnityEngine_1
     = require(\"UnityEngine\");\r\nclass Event extends ZEPETO_Script_1.ZepetoScriptBehaviour
     {\r\n    Start() {\r\n        this.mEventInt = new ($generic(UnityEngine_Events_1.UnityEvent$1,
-    $typeof(\"int\")))();\r\n        this.mEventInt.AddListener((num) => this.Count(num));\r\n       
-    this.countNum = 0;\r\n    }\r\n    Update() {\r\n        if (UnityEngine_1.Input.anyKeyDown
-    && this.mEventInt != null) {\r\n            this.mEventInt.Invoke(this.countNum);\r\n           
-    ++this.countNum;\r\n            if (this.countNum > 100)\r\n                this.countNum
-    = 0;\r\n        }\r\n    }\r\n    Count(num) {\r\n        console.log(`Count
-    : ${num}`);\r\n    }\r\n}\r\nexports.default = Event;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRXaXRoUGFyYW1ldGVycy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV2ZW50V2l0aFBhcmFtZXRlcnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsMkRBQWtEO0FBQ2xELDZDQUFvQztBQUVwQyxNQUFxQixLQUFNLFNBQVEscUNBQXFCO0lBSXJELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxpQkFBTyxpQ0FBWSxvQkFBTyxDQUFDO1FBQ3pDLElBQUksQ0FBQyxTQUFTLENBQUMsV0FBVyxDQUFDLENBQUMsR0FBRyxFQUFDLEVBQUUsQ0FBQSxJQUFJLENBQUMsS0FBSyxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7UUFDbkQsSUFBSSxDQUFDLFFBQVEsR0FBRyxDQUFDLENBQUM7SUFDdEIsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLG1CQUFLLENBQUMsVUFBVSxJQUFHLElBQUksQ0FBQyxTQUFTLElBQUksSUFBSSxFQUFFO1lBQzVDLElBQUksQ0FBQyxTQUFTLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQztZQUVyQyxFQUFFLElBQUksQ0FBQyxRQUFRLENBQUM7WUFDaEIsSUFBRyxJQUFJLENBQUMsUUFBUSxHQUFHLEdBQUc7Z0JBQ2xCLElBQUksQ0FBQyxRQUFRLEdBQUcsQ0FBQyxDQUFDO1NBQ3hCO0lBQ0wsQ0FBQztJQUVELEtBQUssQ0FBQyxHQUFHO1FBQ0osT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLEdBQUcsRUFBRSxDQUFDLENBQUM7SUFDbkMsQ0FBQztDQUNIO0FBdkJELHdCQXVCQyJ9","assetPath":"Assets/02.ZEPETSCRIPT/06.Event/EventWithParameters.ts","manifest":{"properties":[],"name":"Event","description":""},"isCompiled":true}'
-  typescriptHash: 36659efcfa9f8e4e2be1de5bb15a5f30
+    $typeof(\"int\")))();\r\n        this.mEventInt.AddListener(num => this.Count(num));\r\n       
+    this.countNum = 0;\r\n    }\r\n    Update() {\r\n        if ((UnityEngine_1.Input.anyKeyDown)
+    && (this.mEventInt != null)) {\r\n            this.mEventInt.Invoke(this.countNum);\r\n           
+    ++this.countNum;\r\n            if (this.countNum > 100) {\r\n               
+    this.countNum = 0;\r\n            }\r\n        }\r\n    }\r\n    Count(num) {\r\n       
+    console.log(`Count : ${num}`);\r\n    }\r\n}\r\nexports.default = Event;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRXaXRoUGFyYW1ldGVycy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV2ZW50V2l0aFBhcmFtZXRlcnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFDdEQsMkRBQWtEO0FBQ2xELDZDQUFvQztBQUVwQyxNQUFxQixLQUFNLFNBQVEscUNBQXFCO0lBS3BELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxpQkFBTyxpQ0FBWSxvQkFBTyxDQUFDO1FBQ3pDLElBQUksQ0FBQyxTQUFTLENBQUMsV0FBVyxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO1FBQ25ELElBQUksQ0FBQyxRQUFRLEdBQUcsQ0FBQyxDQUFDO0lBQ3RCLENBQUM7SUFFRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLG1CQUFLLENBQUMsVUFBVSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsU0FBUyxJQUFJLElBQUksQ0FBQyxFQUFFO1lBQ2hELElBQUksQ0FBQyxTQUFTLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQztZQUVyQyxFQUFFLElBQUksQ0FBQyxRQUFRLENBQUM7WUFDaEIsSUFBSSxJQUFJLENBQUMsUUFBUSxHQUFHLEdBQUcsRUFBRTtnQkFDckIsSUFBSSxDQUFDLFFBQVEsR0FBRyxDQUFDLENBQUM7YUFDckI7U0FDSjtJQUNMLENBQUM7SUFFRCxLQUFLLENBQUMsR0FBRztRQUNMLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxHQUFHLEVBQUUsQ0FBQyxDQUFDO0lBQ2xDLENBQUM7Q0FDSjtBQXpCRCx3QkF5QkMifQ==","assetPath":"Assets/02.ZEPETOSCRIPT/06.Event/EventWithParameters.ts","manifest":{"properties":[],"name":"Event","description":""},"isCompiled":true}'
+  typescriptHash: 25d85d43c805cc716479d0477bc4fe91
   onlyWriteTrigger: 0

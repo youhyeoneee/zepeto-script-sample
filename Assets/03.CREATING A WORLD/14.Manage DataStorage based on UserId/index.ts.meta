@@ -1,0 +1,51 @@
+fileFormatVersion: 2
+guid: 2033ea1c3b0954cb7bd507308155e30e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"// import { Sandbox, SandboxOptions, SandboxPlayer
+    } from ''ZEPETO.Multiplay'';\r\n// import { DataStorage, loadDataStorage } from
+    ''ZEPETO.Multiplay.DataStorage'';\r\n// import { UserInfo } from ''ZEPETO.Multiplay.Schema'';\r\n//\r\n//
+    interface TargetData {\r\n//     lastJoinRoom: string;\r\n//     lastJoinTime:
+    string;\r\n// }\r\n//\r\n// export default class extends Sandbox {\r\n//\r\n//    
+    onCreate(options: SandboxOptions) {\r\n//         this.onMessage(\"TargetData\",
+    (client: SandboxPlayer, targetData: TargetData) => {\r\n//             this.saveTargetData(client,
+    targetData);\r\n//         });\r\n//\r\n//         this.onMessage(\"GetTargetData\",
+    (client: SandboxPlayer, userId: string) => {\r\n//             this.loadTargetData(client,
+    userId);\r\n//         });\r\n//\r\n//     }\r\n//\r\n//     onJoin(client: SandboxPlayer)
+    {\r\n//         const user = new UserInfo();\r\n//         user.sessionId = client.sessionId;\r\n//        
+    user.userId = client.userId;\r\n//         this.state.UserInfos.set(client.userId,
+    user);\r\n//     }\r\n//\r\n//     onLeave(client: SandboxPlayer, consented?:
+    boolean) {\r\n//         this.state.UserInfos.delete(client.userId);\r\n//    
+    }\r\n//\r\n//     async saveTargetData(client: SandboxPlayer, targetData: TargetData)
+    {\r\n//         console.log(`save target data (${client.userId})\\n ${JSON.stringify(targetData)}`);\r\n//        
+    const playerStorage: DataStorage = client.loadDataStorage();\r\n//         const
+    result = await playerStorage.set(\"targetData\", targetData);\r\n//         client.send(\"Log\",
+    `Save Result : ${result}`);\r\n//     }\r\n//\r\n//     async loadTargetData(client:
+    SandboxPlayer, userId: string) {\r\n//         console.log(`load target data
+    (${userId})`);\r\n//         const userStorage: DataStorage = await loadDataStorage(userId);\r\n//        
+    const targetData = await userStorage.get<TargetData>(\"targetData\");\r\n//        
+    console.log(JSON.stringify(targetData));\r\n//\r\n//         if (targetData)
+    {\r\n//             client.send(\"TargetData\", targetData);\r\n//         }
+    else {\r\n//             const empty: TargetData = {\r\n//                 lastJoinRoom:
+    \"\",\r\n//                 lastJoinTime: \"\",\r\n//             }\r\n//\r\n//            
+    client.send(\"TargetData\", empty);\r\n//         }\r\n//     }\r\n// }\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2RUFBNkU7QUFDN0UsK0VBQStFO0FBQy9FLHNEQUFzRDtBQUN0RCxFQUFFO0FBQ0YseUJBQXlCO0FBQ3pCLDRCQUE0QjtBQUM1Qiw0QkFBNEI7QUFDNUIsSUFBSTtBQUNKLEVBQUU7QUFDRix5Q0FBeUM7QUFDekMsRUFBRTtBQUNGLDBDQUEwQztBQUMxQyw0RkFBNEY7QUFDNUYsdURBQXVEO0FBQ3ZELGNBQWM7QUFDZCxFQUFFO0FBQ0YsdUZBQXVGO0FBQ3ZGLG1EQUFtRDtBQUNuRCxjQUFjO0FBQ2QsRUFBRTtBQUNGLFFBQVE7QUFDUixFQUFFO0FBQ0Ysc0NBQXNDO0FBQ3RDLHVDQUF1QztBQUN2Qyw2Q0FBNkM7QUFDN0MsdUNBQXVDO0FBQ3ZDLHlEQUF5RDtBQUN6RCxRQUFRO0FBQ1IsRUFBRTtBQUNGLDREQUE0RDtBQUM1RCxzREFBc0Q7QUFDdEQsUUFBUTtBQUNSLEVBQUU7QUFDRiw0RUFBNEU7QUFDNUUsOEZBQThGO0FBQzlGLHVFQUF1RTtBQUN2RSw0RUFBNEU7QUFDNUUseURBQXlEO0FBQ3pELFFBQVE7QUFDUixFQUFFO0FBQ0Ysb0VBQW9FO0FBQ3BFLHVEQUF1RDtBQUN2RCwwRUFBMEU7QUFDMUUsOEVBQThFO0FBQzlFLG1EQUFtRDtBQUNuRCxFQUFFO0FBQ0YsNEJBQTRCO0FBQzVCLHFEQUFxRDtBQUNyRCxtQkFBbUI7QUFDbkIsMENBQTBDO0FBQzFDLG9DQUFvQztBQUNwQyxvQ0FBb0M7QUFDcEMsZ0JBQWdCO0FBQ2hCLEVBQUU7QUFDRixnREFBZ0Q7QUFDaEQsWUFBWTtBQUNaLFFBQVE7QUFDUixJQUFJIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/14.Manage DataStorage based on UserId/index.ts","manifest":{"properties":[],"name":"index","description":""},"isCompiled":true}'
+  typescriptHash: c0ec90cbc6380a6e24f2f0b3d810cc8f
+  onlyWriteTrigger: 0

@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: d9273ff5118424629ab5f2cc51078c1b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Script_Leaderboard_1 = require(\"ZEPETO.Script.Leaderboard\");\r\nclass
+    GetAllLeaderboardExample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ZEPETO_Script_Leaderboard_1.LeaderboardAPI.GetAllLeaderboards(this.OnResult,
+    this.OnError);\r\n    }\r\n    OnResult(result) {\r\n        console.log(`result.isSuccess:
+    ${result.isSuccess}`);\r\n        if (result.leaderboards) {\r\n            for
+    (let i = 0; i < result.leaderboards.length; ++i) {\r\n                const leaderboard
+    = result.leaderboards[i];\r\n                console.log(`i: ${i}, id: ${leaderboard.id},
+    name: ${leaderboard.name}`);\r\n            }\r\n        }\r\n    }\r\n    OnError(error)
+    {\r\n        console.error(error);\r\n    }\r\n}\r\nexports.default = GetAllLeaderboardExample;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0QWxsTGVhZGVyYm9hcmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHZXRBbGxMZWFkZXJib2FyZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCx5RUFBdUY7QUFFdkYsTUFBcUIsd0JBQXlCLFNBQVEscUNBQXFCO0lBRXZFLEtBQUs7UUFDRCwwQ0FBYyxDQUFDLGtCQUFrQixDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ25FLENBQUM7SUFFRCxRQUFRLENBQUMsTUFBa0M7UUFDdkMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsTUFBTSxDQUFDLFNBQVMsRUFBRSxDQUFDLENBQUM7UUFFckQsSUFBSSxNQUFNLENBQUMsWUFBWSxFQUFFO1lBQ3JCLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxNQUFNLENBQUMsWUFBWSxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsRUFBRTtnQkFDakQsTUFBTSxXQUFXLEdBQUcsTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDLENBQUMsQ0FBQztnQkFDM0MsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsU0FBUyxXQUFXLENBQUMsRUFBRSxXQUFXLFdBQVcsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO2FBQzVFO1NBQ0o7SUFDTCxDQUFDO0lBRUQsT0FBTyxDQUFDLEtBQWE7UUFDakIsT0FBTyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUN6QixDQUFDO0NBQ0o7QUFwQkQsMkNBb0JDIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/04.Leaderboard/GetAllLeaderboard.ts","manifest":{"properties":[],"name":"GetAllLeaderboardExample","description":""},"isCompiled":true}'
+  typescriptHash: e109bd2bd86bbcb8fc8023329277e8af
+  onlyWriteTrigger: 0

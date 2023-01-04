@@ -1,0 +1,58 @@
+fileFormatVersion: 2
+guid: 6851234ee5f704be791131c9cb363adb
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nclass
+    WorldVideoRecorderExample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Awake() {\r\n        this.videoPlayerObject = new UnityEngine_1.GameObject();\r\n   
+    }\r\n    Start() {\r\n        $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithUserId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    ZEPETO_World_1.WorldService.userId, new ZEPETO_Character_Controller_1.SpawnInfo(),
+    true);\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => {\r\n            this.recorderCamera = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoCamera.camera;\r\n       
+    });\r\n        this.startRecordingButton.onClick.AddListener(() => {\r\n           
+    if (false == ZEPETO_World_1.WorldVideoRecorder.StartRecording(this.recorderCamera,
+    ZEPETO_World_1.VideoResolutions.W1280xH720, 15)) {\r\n                return;\r\n           
+    }\r\n            this.StartCoroutine(this.CheckRecording());\r\n        });\r\n       
+    this.stopRecordingButton.onClick.AddListener(() => {\r\n            if (false
+    == ZEPETO_World_1.WorldVideoRecorder.IsRecording()) {\r\n                return;\r\n           
+    }\r\n            ZEPETO_World_1.WorldVideoRecorder.StopRecording();\r\n       
+    });\r\n        this.saveVideoButton.onClick.AddListener(() => {\r\n           
+    if (false == ZEPETO_World_1.WorldVideoRecorder.IsRecording()) {\r\n               
+    ZEPETO_World_1.WorldVideoRecorder.SaveToCameraRoll(result => { console.log(`${result}`);
+    });\r\n            }\r\n        });\r\n        this.shareVideoButton.onClick.AddListener(()
+    => {\r\n            if (false == ZEPETO_World_1.WorldVideoRecorder.IsRecording())
+    {\r\n                ZEPETO_World_1.WorldVideoRecorder.Share(result => { console.log(`${result}`);
+    });\r\n            }\r\n        });\r\n        this.createFeedButton.onClick.AddListener(()
+    => {\r\n            if (false == ZEPETO_World_1.WorldVideoRecorder.IsRecording())
+    {\r\n                ZEPETO_World_1.WorldVideoRecorder.CreateFeed(\"[contents]\",
+    result => { console.log(`${result}`); });\r\n            }\r\n        });\r\n       
+    this.getThumbnailButton.onClick.AddListener(() => {\r\n            if (false
+    == ZEPETO_World_1.WorldVideoRecorder.IsRecording()) {\r\n                this.thumbnailImage.texture
+    = ZEPETO_World_1.WorldVideoRecorder.GetThumbnail();\r\n            }\r\n       
+    });\r\n    }\r\n    *CheckRecording() {\r\n        while (ZEPETO_World_1.WorldVideoRecorder.IsRecording())
+    {\r\n            yield null;\r\n        }\r\n        let videoPlayer = ZEPETO_World_1.WorldVideoRecorder.AddVideoPlayerComponent(this.videoPlayerObject,
+    this.targetTexture);\r\n        if (videoPlayer == null) {\r\n            return;\r\n       
+    }\r\n        videoPlayer.Play();\r\n    }\r\n}\r\nexports.default = WorldVideoRecorderExample;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV29ybGRWaWRlb1JlY29yZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiV29ybGRWaWRlb1JlY29yZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWdFO0FBRWhFLGlEQUFzRDtBQUN0RCwrQ0FBZ0Y7QUFDaEYsNkVBQXFFO0FBRXJFLE1BQXFCLHlCQUEwQixTQUFRLHFDQUFxQjtJQXFCeEUsS0FBSztRQUNELElBQUksQ0FBQyxpQkFBaUIsR0FBRyxJQUFJLHdCQUFVLEVBQUUsQ0FBQztJQUM5QyxDQUFDO0lBRUQsS0FBSztRQUVELGlFQUF1QixzQkFBc0IsQ0FBN0MsMkNBQWEsQ0FBQyxRQUFRLEVBQXdCLDJCQUFZLENBQUMsTUFBTSxFQUFFLElBQUksdUNBQVMsRUFBRSxFQUFFLElBQUksRUFBRTtRQUMxRiwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxrQkFBa0IsQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQ3ZELElBQUksQ0FBQyxjQUFjLEdBQUcsMkNBQWEsQ0FBQyxRQUFRLENBQUMsV0FBVyxDQUFDLFlBQVksQ0FBQyxNQUFNLENBQUM7UUFDakYsQ0FBQyxDQUFDLENBQUM7UUFFSCxJQUFJLENBQUMsb0JBQW9CLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDL0MsSUFBSSxLQUFLLElBQUksaUNBQWtCLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxjQUFjLEVBQUUsK0JBQWdCLENBQUMsVUFBVSxFQUFFLEVBQUUsQ0FBQyxFQUFFO2dCQUNsRyxPQUFPO2FBQ1Y7WUFFRCxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxjQUFjLEVBQUUsQ0FBQyxDQUFDO1FBQy9DLENBQUMsQ0FBQyxDQUFDO1FBRUgsSUFBSSxDQUFDLG1CQUFtQixDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQzlDLElBQUksS0FBSyxJQUFJLGlDQUFrQixDQUFDLFdBQVcsRUFBRSxFQUFFO2dCQUMzQyxPQUFPO2FBQ1Y7WUFFRCxpQ0FBa0IsQ0FBQyxhQUFhLEVBQUUsQ0FBQztRQUN2QyxDQUFDLENBQUMsQ0FBQztRQUVILElBQUksQ0FBQyxlQUFlLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDMUMsSUFBSSxLQUFLLElBQUksaUNBQWtCLENBQUMsV0FBVyxFQUFFLEVBQUU7Z0JBQzNDLGlDQUFrQixDQUFDLGdCQUFnQixDQUFDLE1BQU0sQ0FBQyxFQUFFLEdBQUcsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLE1BQU0sRUFBRSxDQUFDLENBQUEsQ0FBQyxDQUFDLENBQUMsQ0FBQzthQUMvRTtRQUNMLENBQUMsQ0FBQyxDQUFDO1FBRUgsSUFBSSxDQUFDLGdCQUFnQixDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQzNDLElBQUksS0FBSyxJQUFJLGlDQUFrQixDQUFDLFdBQVcsRUFBRSxFQUFFO2dCQUMzQyxpQ0FBa0IsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLEVBQUUsR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsTUFBTSxFQUFFLENBQUMsQ0FBQSxDQUFDLENBQUMsQ0FBQyxDQUFDO2FBQ3BFO1FBQ0wsQ0FBQyxDQUFDLENBQUM7UUFFSCxJQUFJLENBQUMsZ0JBQWdCLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDM0MsSUFBSSxLQUFLLElBQUksaUNBQWtCLENBQUMsV0FBVyxFQUFFLEVBQUU7Z0JBQzNDLGlDQUFrQixDQUFDLFVBQVUsQ0FBQyxZQUFZLEVBQUUsTUFBTSxDQUFDLEVBQUUsR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsTUFBTSxFQUFFLENBQUMsQ0FBQSxDQUFDLENBQUMsQ0FBQyxDQUFDO2FBQ3ZGO1FBQ0wsQ0FBQyxDQUFDLENBQUM7UUFFSCxJQUFJLENBQUMsa0JBQWtCLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDN0MsSUFBSSxLQUFLLElBQUksaUNBQWtCLENBQUMsV0FBVyxFQUFFLEVBQUU7Z0JBQzNDLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLGlDQUFrQixDQUFDLFlBQVksRUFBRSxDQUFDO2FBQ25FO1FBQ0wsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0lBRUQsQ0FBQyxjQUFjO1FBQ1gsT0FBTyxpQ0FBa0IsQ0FBQyxXQUFXLEVBQUUsRUFBRTtZQUNyQyxNQUFNLElBQUksQ0FBQztTQUNkO1FBRUQsSUFBSSxXQUFXLEdBQUcsaUNBQWtCLENBQUMsdUJBQXVCLENBQUMsSUFBSSxDQUFDLGlCQUFpQixFQUFFLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQztRQUV6RyxJQUFJLFdBQVcsSUFBSSxJQUFJLEVBQUU7WUFDckIsT0FBTztTQUNWO1FBRUQsV0FBVyxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3ZCLENBQUM7Q0FDSjtBQXRGRCw0Q0FzRkMifQ==","assetPath":"Assets/03.CREATING
+    A WORLD/08.CommunicationTool/VideoRecoding/WorldVideoRecorder.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"startRecordingButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"stopRecordingButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"saveVideoButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"shareVideoButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"createFeedButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"getThumbnailButton","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"thumbnailImage","type":"UnityEngine.UI.RawImage","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"targetTexture","type":"UnityEngine.RenderTexture","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"WorldVideoRecorderExample","description":""},"isCompiled":true}'
+  typescriptHash: 470900a28137ca67aa30e183eacd66b4
+  onlyWriteTrigger: 0

@@ -126,12 +126,44 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "zepeto.analytics": {
+      "version": "0.0.1-preview.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://upm.zepeto.run"
+    },
     "zepeto.asset": {
       "version": "1.0.11",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.7.3"
+      },
+      "url": "https://upm.zepeto.run"
+    },
+    "zepeto.buildit.common": {
+      "version": "1.0.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "zepeto.character": "3.1.4"
+      },
+      "url": "https://upm.zepeto.run"
+    },
+    "zepeto.buildit.loader": {
+      "version": "0.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://upm.zepeto.run"
+    },
+    "zepeto.buildit.wedding": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "zepeto.buildit.common": "1.0.2"
       },
       "url": "https://upm.zepeto.run"
     },
@@ -169,6 +201,16 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://upm.zepeto.run"
+    },
+    "zepeto.mannequin": {
+      "version": "1.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "zepeto.character": "3.1.13",
+        "zepeto.script": "1.5.0"
+      },
       "url": "https://upm.zepeto.run"
     },
     "zepeto.multiplay": {

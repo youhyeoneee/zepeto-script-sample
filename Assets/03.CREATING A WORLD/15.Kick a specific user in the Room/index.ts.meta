@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 8cd60f9f0acf84d6d9ad223afa989fed
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"// import { Sandbox, SandboxOptions, SandboxPlayer
+    } from ''ZEPETO.Multiplay'';\r\n// import { DataStorage, loadDataStorage } from
+    ''ZEPETO.Multiplay.DataStorage'';\r\n// import { UserInfo } from ''ZEPETO.Multiplay.Schema'';\r\n//\r\n//
+    export default class extends Sandbox {\r\n//\r\n//     onCreate(options: SandboxOptions)
+    {\r\n//         this.onMessage(\"Kick\", (client: SandboxPlayer, message: string)
+    => {\r\n//             this.tryKick(client, message);\r\n//         });\r\n//    
+    }\r\n//\r\n//     onJoin(client: SandboxPlayer) {\r\n//         const user =
+    new UserInfo();\r\n//         user.sessionId = client.sessionId;\r\n//        
+    user.userId = client.userId;\r\n//\r\n//         this.state.UserInfos.set(client.userId,
+    user);\r\n//     }\r\n//\r\n//     async tryKick(client: SandboxPlayer, userId:
+    string) {\r\n//         let player: SandboxPlayer;\r\n//         if (userId ==
+    null) {\r\n//             player = client;\r\n//         } else {\r\n//            
+    const kickPlayerSessionId: string = this.state.UserInfos.get(userId).sessionId;\r\n//            
+    player = this.loadPlayer(kickPlayerSessionId);\r\n//         }\r\n//\r\n//        
+    console.log(`try kick : ${player.userId}`);\r\n//         await this.kick(player);\r\n//\r\n//        
+    this.broadcast(\"Log\", `kick : ${player.userId}`);\r\n//     }\r\n// }\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2RUFBNkU7QUFDN0UsK0VBQStFO0FBQy9FLHNEQUFzRDtBQUN0RCxFQUFFO0FBQ0YseUNBQXlDO0FBQ3pDLEVBQUU7QUFDRiwwQ0FBMEM7QUFDMUMsK0VBQStFO0FBQy9FLDZDQUE2QztBQUM3QyxjQUFjO0FBQ2QsUUFBUTtBQUNSLEVBQUU7QUFDRixzQ0FBc0M7QUFDdEMsdUNBQXVDO0FBQ3ZDLDZDQUE2QztBQUM3Qyx1Q0FBdUM7QUFDdkMsRUFBRTtBQUNGLHlEQUF5RDtBQUN6RCxRQUFRO0FBQ1IsRUFBRTtBQUNGLDZEQUE2RDtBQUM3RCxxQ0FBcUM7QUFDckMsZ0NBQWdDO0FBQ2hDLCtCQUErQjtBQUMvQixtQkFBbUI7QUFDbkIsOEZBQThGO0FBQzlGLDZEQUE2RDtBQUM3RCxZQUFZO0FBQ1osRUFBRTtBQUNGLHNEQUFzRDtBQUN0RCxtQ0FBbUM7QUFDbkMsRUFBRTtBQUNGLDREQUE0RDtBQUM1RCxRQUFRO0FBQ1IsSUFBSSJ9","assetPath":"Assets/03.CREATING
+    A WORLD/15.Kick a specific user in the Room/index.ts","manifest":{"properties":[],"name":"index","description":""},"isCompiled":true}'
+  typescriptHash: 0b5a2b4ed76a7782dcb5eb2910756e1b
+  onlyWriteTrigger: 0

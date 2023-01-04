@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: d0e697ec0a0364a0db565fb8f7ed880b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass ClientSaveLoad extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.playCntKey
+    = ''PlayCnt'';\r\n    }\r\n    Start() {\r\n        if (UnityEngine_1.PlayerPrefs.HasKey(this.playCntKey))
+    {\r\n            UnityEngine_1.PlayerPrefs.SetInt(this.playCntKey, UnityEngine_1.PlayerPrefs.GetInt(this.playCntKey)
+    + 1);\r\n            console.log(`PlayCnt : ${UnityEngine_1.PlayerPrefs.GetInt(this.playCntKey)}`);\r\n       
+    }\r\n        else {\r\n            UnityEngine_1.PlayerPrefs.SetInt(this.playCntKey,
+    1);\r\n            console.log(''PlayCnt : 1'');\r\n        }\r\n    }\r\n}\r\nexports.default
+    = ClientSaveLoad;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2xpZW50U2F2ZUxvYWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDbGllbnRTYXZlTG9hZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCw2Q0FBMEM7QUFFMUMsTUFBcUIsY0FBZSxTQUFRLHFDQUFxQjtJQUFqRTs7UUFFSSxlQUFVLEdBQVcsU0FBUyxDQUFDO0lBV25DLENBQUM7SUFURyxLQUFLO1FBQ0QsSUFBSSx5QkFBVyxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDckMseUJBQVcsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBRSx5QkFBVyxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7WUFDN0UsT0FBTyxDQUFDLEdBQUcsQ0FBQyxhQUFjLHlCQUFXLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUUsRUFBRSxDQUFDLENBQUM7U0FDckU7YUFBTTtZQUNILHlCQUFXLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQyxDQUFDLENBQUM7WUFDdkMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxhQUFhLENBQUMsQ0FBQztTQUM5QjtJQUNMLENBQUM7Q0FDSjtBQWJELGlDQWFDIn0=","assetPath":"Assets/03.CREATING
+    A WORLD/03.Multiplay/ClientSaveLoad.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"playCntKey","type":"System.String","isArray":false,"initValue":["PlayCnt"],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ClientSaveLoad","description":""},"isCompiled":true}'
+  typescriptHash: 05e8dfe2b0bca14157a9ceed2370dc31
+  onlyWriteTrigger: 0

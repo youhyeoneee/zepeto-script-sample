@@ -4,21 +4,72 @@
     <list default="true" id="a511c078-b253-4014-9587-0e416299b865" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Multiplay_Script.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Multiplay_Script.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Script.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/runConfigurations/Zepeto_Script.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zepeto-script-sample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.SampleScene/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.SampleScene/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.SampleScene/SampleScript.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.SampleScene/SampleScript.ts.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/CharacterController.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.GETTING STARTED/Create a ZEPETO Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.GETTING STARTED/Create a ZEPETO Character.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/HelloWorld.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/New Typescript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/New Typescript.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/New Typescript.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/01.Hello ZEPETOScript/New Typescript.ts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Properties.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Property.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/Property.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/03.Event Functions/Event Functions.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/03.Event Functions/Event Functions.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/03.Event Functions/MonoBehaviour_LifeCycle.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/03.Event Functions/MonoBehaviour_LifeCycle.ts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/04.Coroutine/Coroutine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/04.Coroutine/Coroutine.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/04.Coroutine/Coroutine.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/04.Coroutine/Coroutine.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/05.GameObjects and Components/GameObjectSample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/05.GameObjects and Components/GameObjectSample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/05.GameObjects and Components/GameObjectSample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/05.GameObjects and Components/GameObjectSample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/Event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/Event.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/Event.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/Event.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/EventWithParameters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/EventWithParameters.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/EventWithParameters.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/06.Event/EventWithParameters.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/07.Event Trigger/EventTriggerSample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/07.Event Trigger/EventTriggerSample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/07.Event Trigger/EventTriggerSample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/07.Event Trigger/EventTriggerSample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/08.UI Event/UI Event.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/08.UI Event/UI Event.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/08.UI Event/UI_Event.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/08.UI Event/UI_Event.ts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/ScriptableObjectSample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/ScriptableObjectSample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/ScriptableObjectSample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/ScriptableObjectSample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/playerDefine/PlayerScriptObjectDef.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/playerDefine/PlayerScriptObjectDef.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/playerDefine/PlayerScriptObjectDef.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/09.ScriptableObject/playerDefine/PlayerScriptObjectDef.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/ScriptImport.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/lib/ExtraComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/lib/ExtraComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/lib/ExtraComponent.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/10.Scipt Import/lib/ExtraComponent.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/LayerExample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/LayerExample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/LayerExample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/LayerExample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/TagExample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/TagExample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/TagExample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/11.Tag &amp; Layer/TagExample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/12.Raycast/RaycastSample.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/12.Raycast/RaycastSample.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/12.Raycast/RaycastSample.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/12.Raycast/RaycastSample.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/CharacterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/CharacterController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/CharacterController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/CharacterController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETO Character Controller.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETO Character Controller.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETOCharacterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETOCharacterController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETOCharacterController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/ZEPETOCharacterController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Multiplay/ZEPETOPlayerMulti.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Multiplay/ZEPETOPlayerMulti.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Singleplay/CharacterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Singleplay/CharacterController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Singleplay/CharacterController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.CREATING A WORLD/01.ZEPETO Character Controller/ZEPETOPlayer/Singleplay/CharacterController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zepeto-sandbox.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zepeto-sandbox.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/zsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/zsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/zepeto-script-compiler/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/zepeto-script-compiler/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/index.js.cache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/index.js.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/relocate-loader.js.cache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/relocate-loader.js.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/shebang-loader.js.cache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/shebang-loader.js.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/ts-loader.js.cache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vercel/ncc/dist/ncc/loaders/ts-loader.js.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +84,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/user/Desktop/zepeto-script-sample/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\qqff0\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\qqff0\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\qqff0\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Node.js/Chrome.Zepeto Multiplay Script" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,27 +111,33 @@
       <option name="presentableId" value="Default" />
       <updated>1671703020504</updated>
       <workItem from="1671703022780" duration="2397000" />
+      <workItem from="1672123979544" duration="11215000" />
+      <workItem from="1672202875213" duration="24095000" />
+      <workItem from="1672305881473" duration="3219000" />
+      <workItem from="1672373520240" duration="14804000" />
+      <workItem from="1672634865407" duration="2629000" />
+      <workItem from="1672824794869" duration="480000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Assets/02.ZEPETOSCRIPT/02.Property/AttributeTest.ts</url>
-          <line>23</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

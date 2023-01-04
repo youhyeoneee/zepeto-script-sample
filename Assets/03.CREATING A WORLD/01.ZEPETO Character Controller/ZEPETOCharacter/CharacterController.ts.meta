@@ -22,13 +22,13 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
     ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
     UnityEngine_1 = require(\"UnityEngine\");\r\nclass CharacterController extends
-    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        // set character
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        // Set character
     spawn location\r\n        var spawninfo = new ZEPETO_Character_Controller_1.SpawnInfo();\r\n       
     spawninfo.position = UnityEngine_1.Vector3.zero;\r\n        spawninfo.rotation
     = UnityEngine_1.Quaternion.identity;\r\n        // Enter the ZEPETO ID in [ZEPETO_ID]
     to load the character.\r\n        $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithZepetoId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
-    \"\", \"gamedev1\", spawninfo, true);\r\n    }\r\n}\r\nexports.default = CharacterController;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoYXJhY3RlckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkVBQW1IO0FBQ25ILDZDQUFnRDtBQUVoRCxNQUFxQixtQkFBb0IsU0FBUSxxQ0FBcUI7SUFFbEUsS0FBSztRQUNELCtCQUErQjtRQUMvQixJQUFJLFNBQVMsR0FBRyxJQUFJLHVDQUFTLEVBQUUsQ0FBQztRQUNoQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsSUFBSSxDQUFDO1FBQ2xDLFNBQVMsQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxRQUFRLENBQUM7UUFFekMsNERBQTREO1FBQzVELGlFQUF1Qix3QkFBd0IsQ0FBL0MsMkNBQWEsQ0FBQyxRQUFRLEVBQTBCLEVBQUUsRUFBRSxVQUFVLEVBQUUsU0FBUyxFQUFDLElBQUksRUFBRTtJQUNwRixDQUFDO0NBQ0o7QUFYRCxzQ0FXQyJ9","assetPath":"Assets/03.CREATING
-    A WORLD/01.ZEPETO Character Controller/CharacterController.ts","manifest":{"properties":[],"name":"CharacterController","description":""},"isCompiled":true}'
-  typescriptHash: d86aacb1d9d6ddb258e084e854584987
+    \"\", \"buildit\", spawninfo, true);\r\n    }\r\n}\r\nexports.default = CharacterController;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoYXJhY3RlckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFDdEQsNkVBQW9IO0FBQ3BILDZDQUFrRDtBQUVsRCxNQUFxQixtQkFBb0IsU0FBUSxxQ0FBcUI7SUFFbEUsS0FBSztRQUNELCtCQUErQjtRQUMvQixJQUFJLFNBQVMsR0FBRyxJQUFJLHVDQUFTLEVBQUUsQ0FBQztRQUNoQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsSUFBSSxDQUFDO1FBQ2xDLFNBQVMsQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxRQUFRLENBQUM7UUFFekMsNERBQTREO1FBQzVELGlFQUF1Qix3QkFBd0IsQ0FBL0MsMkNBQWEsQ0FBQyxRQUFRLEVBQTBCLEVBQUUsRUFBRSxTQUFTLEVBQUUsU0FBUyxFQUFDLElBQUksRUFBRTtJQUNuRixDQUFDO0NBQ0o7QUFYRCxzQ0FXQyJ9","assetPath":"Assets/03.CREATING
+    A WORLD/01.ZEPETO Character Controller/ZEPETOCharacter/CharacterController.ts","manifest":{"properties":[],"name":"CharacterController","description":""},"isCompiled":true}'
+  typescriptHash: 63bf5b1ee5cac38a7d2103e819896e7d
   onlyWriteTrigger: 0

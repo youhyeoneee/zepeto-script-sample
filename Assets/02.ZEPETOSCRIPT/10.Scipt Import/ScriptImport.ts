@@ -1,36 +1,33 @@
-import {ZepetoScriptBehaviour} from "ZEPETO.Script";
-import {Text} from "UnityEngine.UI";
- 
-// import custom script from path
-import ExtraComponent from "./lib/ExtraComponent"
- 
+import { ZepetoScriptBehaviour } from 'ZEPETO.Script';
+import { Text } from 'UnityEngine.UI';
+// Import custom script from path
+import ExtraComponent from './lib/ExtraComponent';
+
 export default class ScriptImport extends ZepetoScriptBehaviour {
-   public resultUi:Text;
-   private extComponent:ExtraComponent;
-     
-   Start()
-   {
-       // add script component
-       this.gameObject.AddComponent<ExtraComponent>();
-       this.extComponent = this.gameObject.GetComponent<ExtraComponent>();
-   }
-   
-   Update()
-   {
-       // get value by method call
-       var count = this.extComponent.GetCount();
-         
-       if(count > 10)
-       {
-           // set value by method call
-           this.extComponent.SetCount(0);
-       }
-         
-       // get public property
-       var resultString = this.extComponent.stringProperty;
-         
-       // print result
-       console.log(`result : ${resultString}`);
-       this.resultUi.text = resultString;
-   }
+
+    public resultUI: Text;
+    private extComponent: ExtraComponent;
+
+    Start() {
+        // Add script component
+        this.gameObject.AddComponent<ExtraComponent>();
+        this.extComponent = this.gameObject.GetComponent<ExtraComponent>();
+    }
+
+    Update() {
+        // Get value by method call
+        const count = this.extComponent.GetCount();
+
+        if (count > 10) {
+            // Set value by method call
+            this.extComponent.SetCount(0);
+        }
+
+        // Get public property
+        const resultString = this.extComponent.stringProperty;
+
+        // Print result
+        console.log(`result : ${resultString}`);
+        this.resultUI.text = resultString;
+    }
 }

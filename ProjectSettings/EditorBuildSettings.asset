@@ -4,5 +4,24 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/03.CREATING A WORLD/08.CommunicationTool/VideoRecoding/VideoRecoding.unity
+    guid: f79b5b70d04364caa88062cb741a6626
+  - enabled: 0
+    path: Assets/03.CREATING A WORLD/09.Using ZEPETO App URL Scheme/URLScheme.unity
+    guid: 76ca55709712f427a922658b95400ad1
+  - enabled: 1
+    path: Assets/03.CREATING A WORLD/12.Inter-World Travel API/Inter-World Travel.unity
+    guid: cff1689da89cd4a33bfd6e323a798040
+  - enabled: 0
+    path: Assets/03.CREATING A WORLD/16.Customize sending and receiving chat messages/Customize
+      chat massage.unity
+    guid: 8536c81d6ed29452089bfd0abc64a733
+  - enabled: 0
+    path: Assets/00.SampleScene/Multiplay/SampleScene.unity
+    guid: 479eac70a1064470a853339ba08f4da6
+  - enabled: 0
+    path: Assets/03.CREATING A WORLD/08.CommunicationTool/ScreenShot/ScreenShot.unity
+    guid: 582083b0ecf5a47a18a419fa93daaeb2
   m_configObjects: {}

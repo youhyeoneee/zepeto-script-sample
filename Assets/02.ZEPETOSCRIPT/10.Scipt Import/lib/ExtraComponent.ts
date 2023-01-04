@@ -1,6 +1,7 @@
-import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { ZepetoScriptBehaviour } from 'ZEPETO.Script';
 
 export default class ExtraComponent extends ZepetoScriptBehaviour {
+    
     public stringProperty: string;
     private message: string;
     private count: int;
@@ -18,7 +19,7 @@ export default class ExtraComponent extends ZepetoScriptBehaviour {
         return this.count;
     }
      
-    SetCount(newCount:int) {
+    SetCount(newCount: int) {
         this.count = newCount;
     }
 
